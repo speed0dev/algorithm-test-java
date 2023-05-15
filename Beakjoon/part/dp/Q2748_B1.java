@@ -21,6 +21,8 @@ public class Q2748_B1 {
         arr[0] = 1;     //
         arr[1] = 1;     //
 
+        System.out.println(arr[2] + " 10:" + arr[10]);
+
         System.out.println(fibo(arr, N));
 
 
@@ -29,9 +31,11 @@ public class Q2748_B1 {
 
     private static long fibo(long[] arr, int n) {
 
-        if(arr[n] > 0){
+        if(arr[n] != 0){
+            System.out.println( arr[n] );
             return arr[n];
         }
+
         return arr[n] = fibo(arr,n-1) + fibo(arr, n-2);
 
     }
