@@ -14,30 +14,30 @@ public class Q2748_B1 {
         StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 
         int N = Integer.parseInt(st.nextToken());
-        int len = N+1;
         // n < 90
-        long[] arr = new long[len];   //
+        long[] arr = new long[N+1];   //
 
-        arr[0] = 1;     //
+        arr[0] = 0;     //
         arr[1] = 1;     //
 
-        System.out.println(arr[2] + " 10:" + arr[10]);
-
         System.out.println(fibo(arr, N));
-
-
 
     }
 
     private static long fibo(long[] arr, int n) {
+        if(n == 1){
+            return 1;
+        }
+        if(n == 0){
+            return 0;
+        }
 
-        if(arr[n] != 0){
-            System.out.println( arr[n] );
+        if(arr[n] > 1){
+            //System.out.println( arr[n] );
             return arr[n];
         }
 
         return arr[n] = fibo(arr,n-1) + fibo(arr, n-2);
-
     }
 
 }
