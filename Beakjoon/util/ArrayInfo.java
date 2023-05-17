@@ -20,6 +20,16 @@ public class ArrayInfo {
         System.out.println("=========================");
     }
 
+    public static void showIntArrSpace(int[] arr, int first){
+        System.out.println("");
+        int len = arr.length;
+        for(int i=first;i<len;i++){
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println(" -----------------");
+    }
+
+
     public static void show(long[] arr){
         System.out.println("------------------------");
         int len = arr.length;
