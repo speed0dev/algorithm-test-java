@@ -39,4 +39,13 @@ public class ArrayInfo {
         System.out.println("=========================");
     }
 
+    public static void showCharArr(char[] arr){
+        System.out.println("------------------------");
+        int len = arr.length;
+        for(int i=0;i<len;i++){
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println("=========================");
+    }
+
 }
