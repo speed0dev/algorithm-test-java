@@ -48,4 +48,16 @@ public class ArrayInfo {
         System.out.println("=========================");
     }
 
+    public static void showMapArr(int[][] map, int first){
+        System.out.println("------------------------");
+        int len = map.length;
+        for(int i=first;i<len;i++){
+            for(int j=0;j<map[i].length;j++) {
+                System.out.print(map[i][j] + " ");
+            }
+            System.out.println(" ");
+        }
+        System.out.println("=========================");
+    }
+
 }

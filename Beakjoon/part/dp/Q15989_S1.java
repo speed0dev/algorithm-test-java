@@ -17,12 +17,14 @@ public class Q15989_S1 {
         StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 
         // T test갯수
-        int T = Integer.parseInt(st.nextToken());
+        int T = Integer.parseInt(st.nextToken());   //
         int[] arr = new int[T];
         for(int i=0;i<T;i++){
             st = new StringTokenizer(br.readLine(), " ");
             arr[i] = Integer.parseInt(st.nextToken());
         }
+
+
 
         ArrayInfo.showIntArr(arr);
 
