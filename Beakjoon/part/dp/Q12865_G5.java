@@ -16,7 +16,7 @@ public class Q12865_G5 {
         StringTokenizer st = new StringTokenizer(br.readLine(), " ");
         //
         int N = Integer.parseInt(st.nextToken());   // 물품수 1<=N<=100
-        int K = Integer.parseInt(st.nextToken());   // 무게   1<=K<=100000
+        int K = Integer.parseInt(st.nextToken());   // 무게   1<=K<=100,000
 
         int [][] VW= new int[N+1][2];
         for(int i=1;i<N+1;i++){
